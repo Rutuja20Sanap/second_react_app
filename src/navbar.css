@@ -1,0 +1,30 @@
+
+
+.navbar{
+    background-color: black;
+    padding:6px;
+    display:flex;
+    margin-bottom: 40px;
+    
+  
+}
+.heading{
+    color:white;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 40px;
+    font-style: italic;
+  
+}
+.navbar-link{
+    color:white; 
+   margin-left:20px;
+   margin-right: 50px;
+   margin-top: 50px;
+   font-size: 23px;
+   text-decoration: none;
+  border-bottom:1px solid rgb(247, 104, 2);
+}
+.navbar-link:hover{
+color:rgb(247, 104, 2);
+}

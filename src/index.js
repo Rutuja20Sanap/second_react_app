@@ -1,15 +1,20 @@
-import {createRoot} from 'react-dom/client';
-const root = createRoot(document.getElementById('root'));
-const SayHello = ({name})=>{
-  return(<><h2>Hello {name}</h2></>)
-}
-const CakeShop = ()=>{
-return (<div><h1>Dark-Chocolate</h1></div>);
-}
+import ReactDOM from 'react-dom/client';
+import "./index.css"
+import Home from "./home";
+import About from "./About";
+import Contact from "./Contact";
 
-
-root.render(<>
-<SayHello name ="Rutuja"/>
-<h1>Cake</h1>
-<CakeShop/>
-</>);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const currentPath = window.location.pathname;
+if(currentPath =="/"){
+  root.render(<Home/>);
+}
+else if(currentPath =="/about"){
+  root.render(<About/>);
+}
+else if(currentPath =="/contact"){
+  root.render(<Contact/>);
+}
+else{
+  root.render(<h1>404 not found</h1>)
+}
