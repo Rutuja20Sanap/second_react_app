@@ -8,7 +8,7 @@ backgroundColor:"purple",
 textAlign:"center",
 padding:"2px",
 borderRadius:"6px"
-    }}><h1>Home</h1></div></div>
+}}><h1>Home</h1></div></div>
   )
 }
 
